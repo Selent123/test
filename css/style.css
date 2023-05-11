@@ -1,0 +1,353 @@
+.body{
+    width: 1440px;
+    margin:0 auto;
+    background-color: #f5f8f9;
+}
+.head{
+    width: 100%;
+	height: 100px;
+	display: flex;
+    flex-direction: row;
+    justify-content:center;
+    background-color: #ffffff;
+}
+.logo-div{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.logo{
+    margin-left: 150px;
+}
+.logo-btn{
+	width: 105px;
+    height: 30px;
+    border-style: none;
+	background-color: #f92525;
+	font-size: 12px;
+    color: #ffffff;
+}
+.head-right{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+img{
+    width: 18px;
+    height: 18px;
+}
+.head-right-cell{
+    display: flex;
+    align-items: center;
+    margin-right: 150px;
+}
+.settings{
+	opacity: 0.5;
+    margin-right: 15px;
+}
+.bell{
+	opacity: 0.5;
+    margin-right: 40px;
+}
+.logout-btn
+{
+    width: 110px;
+    height: 40px;
+    border-radius: 2px;
+    border-style: none;
+	background-color: #f92525;
+	font-size: 13px;
+    color: #ffffff;
+}
+.content{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.content-top{
+    width: 100%;
+    height: 170px;
+    display: flex;
+    align-items: center;
+}
+.content-top-left{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 151px;
+}
+.text-top{
+	font-size: 30px;
+	color: #262b2e;
+}
+.text-bottom{
+	font-size: 15px;
+	color: #262b2e;
+	opacity: 0.7;
+}
+.content-top-right{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-right: 150px;
+}
+.actionbar{
+    width: 470px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 99px;
+	font-size: 13px;
+	font-weight: 700;
+	color: #262b2e;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    height: 15px;
+    line-height: 10px;
+    display: block;
+    color: #262b2e;
+    text-align: center;
+    text-decoration: none;
+}
+li a:hover {
+    border-bottom: rgb(160, 160, 160) solid 2px;
+}
+.bar.active{
+    border-bottom: #111 solid 2px;
+}
+.home-content{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+#slide-container {
+    width: 560px;
+    height: 280px;
+    margin-left: 150px;
+    position: relative;
+    background-color: #fff;
+  }
+  .slide {
+    width: 560px;
+    height: 280px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity .5s ease-out;
+  }
+  .slide.active {
+    opacity: 1;
+  }
+  .slide>img{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 560px;
+    height: 280px;
+  }
+  .prev,
+  .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 30px;
+    color: #ccc;
+    cursor: pointer;
+    z-index: 2;
+  }
+  .prev {
+    left: 10px;
+  }
+  .next {
+    right: 10px;
+  }
+  .dots-container {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items:flex-end;
+  }
+  .dot {
+    width: 5px;
+    height: 8px;
+    margin: 0 10px;
+    background-color: #555;
+    cursor: pointer;
+    transition: background-color .5s ease-out;
+  }
+  .dot.active{
+    width: 5px;
+    height: 12px;
+    background-color: #ccc;
+  }
+
+.user{
+    width: 560px;
+    height: 280px;
+    margin-right: 150px;
+    background-color: #ffffff;
+}
+.support-request{
+    width: 100%;
+    height: 110px;
+    border-bottom: 1px solid  #f5f8f9;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-between;
+	opacity: 0.8;
+}
+.support-request-text{
+	font-size: 18px;
+    color: #262b2e;
+    margin-left: 50px;
+}
+.support-request-btn{
+	width: 95px;
+	height: 40px;
+	border-radius: 2px;
+    border: solid 2px #e9e9ea;
+    background-color: #fff;
+	opacity: 0.7;
+    margin-right: 50px;
+	font-size: 13px;
+	color: #262b2e;
+}
+.data{
+    width: 100%;
+    height: 178px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+table {
+    margin-top: 30px;
+    width: 460px;
+    height: 120px;
+    font-size: 14px;
+    font-weight: 600;
+  }
+th, td {
+	font-size: 13px;
+    text-align: left;
+}
+td{
+	opacity: 0.5;
+}
+.status{
+    text-align: center;
+    width: 65px;
+	height: 30px;
+	background-color: #5dd054;
+	border-radius: 2px;
+    font-size: 13px;
+    opacity: 1;
+	color: #ffffff;
+}
+.curve-chart-div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 20px;
+    width: 1140px;
+    height: 350px;
+    font-weight: 600;
+    background-color: #fff;
+}
+.curve-chart-title{
+	color: #262b2e;
+    font-size: 20px;
+    margin-top: 35px;
+}
+.curve-chart{
+    width: 1065px;
+    height: 280px;
+}
+.charts{
+    width: 1140px;
+    height: 377px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.charts-div{
+    width: 560px;
+    height: 377px;
+    font-weight: 600;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.pie-chart{
+    width: 560px;
+    height: 350px;
+}
+.bar-chart{
+    width: 560px;
+    height: 350px;
+}
+.footer{
+    width: 100%;
+    height: 253px;
+    margin-top: 20px;
+    background-color: #202124;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.footer_div{
+    width: 1140px;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.footer-logo-div{
+    margin-top: 15px;
+    height: 100px;
+}
+.support{
+    width: 930px;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    color: #ffffff;
+}
+p{
+    font-weight: 600;
+    text-align: center;
+    height: 10px;
+    line-height: 5px;
+    width: 120px;
+	font-size: 13px;
+}
+

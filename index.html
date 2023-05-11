@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="js/echarts.js"></script>
+    <script src="js/data.js"></script>
+    <script src="js/request.js"></script>
+    <script src="js/component.js"></script>
+</head>
+<body class="body">
+    <div class="head">
+        <div class="logo-div">
+            <div class="logo">
+                <button class="logo-btn">LOGO</button>
+            </div>
+        </div>
+        <div class="head-right">
+            <div class="head-right-cell">
+                <div class="settings">
+                    <img src="static/settings.png">
+                </div>
+                <div class="bell">
+                    <img src="static/bell.png">
+                </div>
+                <div class="logout">
+                    <button class="logout-btn">Log Out</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="content-top">
+            <div class="content-top-left">
+                <div class="text-top">Audience Overview</div>
+                <div class="text-bottom">Roseville, CA</div>
+            </div>
+            <div class="content-top-right">
+                <ul class="actionbar">
+                    <li><a class="bar" data-index="0" href="#">DASHBOARD</a></li>
+                    <li><a class="bar" data-index="1" href="#">PROJECTS</a></li>
+                    <li><a class="bar" data-index="2" href="#">CALENDAR</a></li>
+                    <li><a class="bar" data-index="3" href="#">MAILBOX</a></li>
+                    <li><a class="bar" data-index="4" href="#">SETTINGS</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="home-content">
+            <div id="slide-container">
+                <li class="slide"><img src="./static/1.jpg"></li>
+                <li class="slide"><img src="./static/2.jpg"></li>
+                <li class="slide"><img src="./static/3.jpg"></li>
+                <li class="slide"><img src="./static/4.jpg"></li>
+                <li class="slide"><img src="./static/5.jpg"></li>
+                <a class="prev">❮</a>
+                <a class="next">❯</a>
+                <div class="dots-container">
+                  <span class="dot" data-index="0"></span>
+                  <span class="dot" data-index="1"></span>
+                  <span class="dot" data-index="2"></span>
+                  <span class="dot" data-index="3"></span>
+                  <span class="dot" data-index="4"></span>
+                </div>
+            </div>
+            <div class="user">
+                <div class="support-request">
+                    <div class="support-request-text">
+                        Support Request
+                    </div>
+                    <div>
+                        <button class="support-request-btn">
+                            View All
+                        </button>
+                    </div>
+                    
+                </div>
+                <div class="data">
+                    <table>
+                        <tr>
+                            <th>TIME</th>
+                            <th>USER NAME</th>
+                            <th>STATUS</th>
+                        </tr>
+                        <tr>
+                            <td>9:45pm</td>
+                            <td>info@desigin.com</td>
+                            <td class="status">solved</td>
+                        </tr>
+                        <tr>
+                            <td>9:45pm</td>
+                            <td>info@desigin.com</td>
+                            <td class="status">solved</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <div class="curve-chart-div">
+            <div id="curve-chart" class="curve-chart">
+            </div>
+        </div>
+
+        <div class="charts">
+            <div class="charts-div">
+                <div id="pie-chart" class="pie-chart">
+                </div>
+            </div>
+            <div class="charts-div">
+                <div id="bar-chart" class="bar-chart">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="footer_div">
+            <div class="footer-logo-div">
+                <div class="logo">
+                    <button class="logo-btn">LOGO</button>
+                </div>
+            </div>
+            <div class="support">
+                <p>NEWS</p>
+                <p>SPORT</p>
+                <p>WEATHER</p>
+                <p>FUTURE</p>
+                <p>TRAVEL</p>
+                <p>CHANNELS</p>
+                <p>CULTURE</p>
+                <p>AUTOS</p>
+                <p>FOOD</p>
+                <p>RADIO</p>
+                <p>OVERVIEW</p>
+                <p>NATURE</p>
+                <p>LOCAL</p>
+                <p>EARTH</p>
+                <p>TIMELINE</p>
+                <p>MUSIC</p>
+                <p>SHOP</p>
+                <p>TV</p>
+            </div>
+        </div>
+    </div>
+    <script>
+        getChartData();
+        pieChartData();
+        barChartData();
+        showSlides();
+        actionbar();
+    </script>
+</body>
+
+</html>
